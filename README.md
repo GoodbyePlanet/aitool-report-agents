@@ -5,6 +5,11 @@ The system executes a thorough investigation to ensure the tool's features, data
 The final deliverable is an Actionable Research Report that definitively states whether the given AI tool is approved for integration into the daily work environment.
 
 #### Running on localhost
+```bash
+cp .env.example .env
+# Add your API key to .env
+```
+
 Prerequisites:
 - python >= 3.9
 
