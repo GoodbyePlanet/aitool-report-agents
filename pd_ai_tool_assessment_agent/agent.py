@@ -104,7 +104,7 @@ runner = Runner(
 
 
 async def execute(request):
-    print(f"Request received to assess AI tool {request.ai_tool} - with session ID {request.session_id}")
+    print(f"Request received with message: {request.ai_tool} - with session ID {request.session_id}")
 
     current_session = request.session_id if request.session_id else f"session_{uuid.uuid4()}"
     existing_session = await session_service.get_session(
